@@ -1,4 +1,4 @@
-# `vrelease-docker`
+# `vrelease-docker-image`
 
 <img src="icon.svg" height="240px" align="right"/>
 
