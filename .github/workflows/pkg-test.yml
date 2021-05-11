@@ -1,0 +1,23 @@
+name: pkg-test
+
+on:
+  push:
+    tags:
+      - "v*"
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout to vrelease
+        uses: actions/checkout@v2
+
+      - name: Pull image from DockerHub
+        run: docker pull caian/vrelease:latest
+
+      - name: Run test
+        run: |
+          docker run --rm vrelease -h
+          docker run --rm vrelease -v
