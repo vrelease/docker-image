@@ -19,5 +19,5 @@ jobs:
 
       - name: Run test
         run: |
-          docker run --rm vrelease -h
-          docker run --rm vrelease -v
+          docker run --rm caian/vrelease -h
+          docker run --rm caian/vrelease -v
