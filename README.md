@@ -37,6 +37,18 @@ docker build -t vrelease .
 [vrelease]: https://github.com/vrelease/vrelease
 
 
+## How can I use it?
+
+After pulling/building the image, run the image passing the token as an
+environment variable and the necessary `vrelease` flags, e.g.:
+
+```sh
+docker run -e VRELEASE_AUTH_TOKEN="my_token" vrelease -c -i
+```
+
+For instructions on how to use `vrelease`, [see this](https://github.com/vrelease/vrelease#how-can-i-use-it).
+
+
 ## License
 
 To the extent possible under law, [Caian Rais Ertl][me] has waived __all
