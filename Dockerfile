@@ -5,7 +5,7 @@ RUN apk update && \
 
 FROM base AS build
 WORKDIR /
-RUN git clone --depth 1 --branch v0.3.1 https://github.com/vrelease/vrelease.git vr && \
+RUN git clone --depth 1 --branch v0.3.2 https://github.com/vrelease/vrelease.git vr && \
     cd vr && \
     make static
 
