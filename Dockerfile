@@ -9,7 +9,7 @@ RUN git clone --depth 1 --branch v0.3.2 https://github.com/vrelease/vrelease.git
     cd vr && \
     make static
 
-FROM alpine:3.13 AS plat
+FROM alpine:3.15 AS plat
 RUN apk update && \
     apk add --no-cache git curl
 
